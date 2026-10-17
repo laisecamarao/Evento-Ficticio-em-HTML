@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscrições Festa</title>
+    <style>
+        body{
+        }
+    </style>
+</head>
+<body>
+    <h1>===Festa de Halloween===</h1>
+    <h2>Preencha o formulário para se inscrever</h2>
+    <p>Nossa grande festa só acontece uma vez por ano, então se inscreva e garanta seu ingresso se não quiser esperar por mais 365 amaldiçoados dias...</p>
+    <h3>Informações pessoais</h3>
+
+    <form>
+        <label>Seu nome: </label>
+        <input type="text" placeholder="..."> 
+        
+        <br><br>
+        
+        <label>Seu E-mail: </label>
+        <input type="email" placeholder="...">
+        
+        <br><br>
+        
+        <label>Seu número para contato: </label>
+        <input type="number" placeholder="...">
+        
+        <br><br>
+        
+        <label>Seu CPF: </label>
+        <input type="number" placeholder="...">
+
+        <br><br>
+        
+        <label for="nascimento">Data de nascimento:</label> <input type="date" id="nascimento" name="nascimento" required>
+        <p>! Sua inscrição será automaticamente recusada se o nome, data de nascimento e CPF <br>
+            não forem validados, ou se seus dados forem referentes aos de um menor de idade !</p>
+
+        <label for="cidade">De qual cidade você está vindo:</label> 
+        <select id="cidade" name="cidade" required> 
+            <option value="">Selecione</option> 
+            <option value="belem">Belém</option> 
+            <option value="ananindeua">Ananindeua</option> 
+            <option value="marituba">Marituba</option> 
+            <option value="outra">Outra</option> 
+        </select>
+
+        <h3>Informações de ingresso</h3>
+        <label>Tipo de ingresso (o ingresso de grupo aceita até 3 acompanhantes):</label> <br> 
+        <input type="radio" id="individual" name="ingresso" value="individual" required> 
+        <label for="individual">Individual</label> 
+        <input type="radio" id="grupo" name="ingresso" value="grupo"> 
+        <label for="grupo">Grupo</label>
+
+        <br><br>
+
+        <label for="cor">Cor da(s) pulseira(s):</label> <input type="color" id="cor" name="cor">
+
+        <br><br>
+
+        <h3>Informações adicionais</h3>
+        <label for="instagram">Instagram:</label> <input type="url" id="instagram" name="instagram" placeholder="https://instagram.com/...">
+
+        <br><br>
+
+        <label for="fantasia">Descreva sua(s) fantasia(s):</label> <br> <textarea id="fantasia" name="fantasia" rows="3" maxlength="550"></textarea>
+
+        <br><br>
+
+        <label for="senha">Crie uma senha:</label> <input type="password" id="senha" name="senha" minlength="8" required>
+
+        <br><br>
+
+        <label for="networking">Como você ficou sabendo do nosso evento?</label> 
+        <select id="networking" name="networking" required> 
+            <option value="">Selecione</option> 
+            <option value="porumamigo">Por um amigo</option> 
+            <option value="instagram">Pelo Instagram</option>  
+            <option value="tikok">Pelo TikTok</option> 
+            <option value="outromeio">Outro meio</option> 
+        </select>
+
+        <h3>Finalização</h3> 
+
+        <input type="checkbox" id="termos" name="termos" required> 
+        <label for="termos">Aceito os termos da festa.</label>
+
+        <br><br>
+
+        <input type="submit" value="Enviar inscrição"> 
+
+        <br><br>
+
+        <input type="reset" value="Limpar">
+
+    </form>
+
+</body>
+</html>
